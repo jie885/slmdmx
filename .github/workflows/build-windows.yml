@@ -32,7 +32,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: 史莱姆大冒险-Windows
-          path: |
-            src-tauri/target/release/bundle/nsis/*.exe
-            src-tauri/target/release/bundle/msi/*.msi
+          path: src-tauri/target/release/bundle/nsis/*.exe
           if-no-files-found: error

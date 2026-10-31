@@ -29,7 +29,7 @@ tauri build
 
 产物位于 `src-tauri/target/release/bundle/`：
 - `nsis/*.exe` —— 独立安装包（安装后桌面运行）
-- `msi/*.msi` —— MSI 安装包
+- 仅生成 NSIS 安装包（.exe）
 
 ### Linux（Ubuntu 22.04+）
 ```bash
@@ -45,7 +45,7 @@ cargo tauri build          # 二进制 + deb/AppImage
 工程已内置 GitHub Actions（`.github/workflows/build-windows.yml`）：
 1. 把本目录推送到 GitHub 仓库；
 2. Actions → 「构建 Windows exe」→ Run workflow（或 push 自动触发）；
-3. 完成后在 Artifacts 下载 `史莱姆大冒险-Windows`，内含 setup.exe 与 .msi。
+3. 完成后在 Artifacts 下载 `史莱姆大冒险-Windows`，内含 setup.exe。
 
 ## 说明
 - 游戏窗口 430×820（与网页版视口一致），可拉伸最小 430×700。
